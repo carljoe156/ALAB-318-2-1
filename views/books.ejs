@@ -7,5 +7,13 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <p>This pages is displays our current inventory.</p>
+
+    <img src="/public/images/being-a-full-stack-dev.jpg" alt="full-stack-dev" />
+    <form action="/submit-book" method="POST">
+      <label for="bookTitle">Book Title:</label>
+      <input type="text" id="bookTitle" name="bookTitle" required />
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
